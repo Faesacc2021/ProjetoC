@@ -17,9 +17,13 @@ int main(int argc, char *argv[]) {
 	
 	struct student studentRecords[30];
 	studentRecords[0].matricula = 21210;
-	studentRecords[0].mensalidade = 1250;
+	studentRecords[0].mensalidade = 1250,00;
 	
-	printf(studentRecords[0].matricula);
+	printf("Vamos nessa catatau\n");
+	printf("%d", studentRecords[0].matricula);
 	
+	printf("Digita QQ Pleura\n");
+	scanf("%i", &studentRecords[0].matricula);
+	printf("%1", "\n", studentRecords[0].matricula);	
 	return 0;
 }
