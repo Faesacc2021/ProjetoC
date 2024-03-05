@@ -1,29 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
 int main(int argc, char *argv[]) {
 	
 	
-	int idade; /* inteiro reserva 4 bytes 32 bits 1 para o sinal*/
-	int vetorA[3]; /* tamanho na memoria 4 X 3 */
-	idade = 56;
+	int a, b, *p; 
+
+	a = 22;
+	b = 33;
+	p = &b;
 	
-	struct student {
-		int matricula;
-		float mensalidade;
-	};
+	printf("Valor de a %i \n", a);
 	
-	struct student studentRecords[30];
-	studentRecords[0].matricula = 21210;
-	studentRecords[0].mensalidade = 1250,00;
+	printf("Valor de a %i \n", a);
 	
-	printf("Vamos nessa catatau\n");
-	printf("%d", studentRecords[0].matricula);
+	printf("Valor de a %i \n", &a);
 	
-	printf("Digita QQ Pleura\n");
-	scanf("%i", &studentRecords[0].matricula);
-	printf("%1", "\n", studentRecords[0].matricula);	
+	printf("Valor de b %i \n", b);
+	
+	printf("Valor de b %i \n", &b);
+	
+	printf("Valor de p %i \n", *p);
+
+	p++;
+	
+	printf("Valor de p %i \n", *p);
+	
+	p++;
+
+	printf("Valor de p %i \n", *p);
+
 	return 0;
 }
