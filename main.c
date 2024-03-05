@@ -29,6 +29,35 @@ int main(int argc, char *argv[]) {
 	p++;
 
 	printf("Valor de p %i \n", *p);
+	
+	struct no {
+		int dado;
+		struct no *prox;
+	};
+	
+	struct no *P, *lista;
+	
+	P = malloc (sizeof(struct no));	
+	lista = P;
+	P->dado = 90;
+	P->prox = lista;
+	lista = P;  
+
+/* P ponteiro --  P-> nó  --  p->dado = 25 */
 
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
